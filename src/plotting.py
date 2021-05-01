@@ -4,6 +4,9 @@ sample = data.iloc[-1]
 d_to_pivot = 0.5
 d_to_sl = 5
 
+# Constants for gate
+gate_radius, min_elev = (1804.238, 7.987)
+
 L = math.cos(math.radians(sample.G1_ANGLE))*(gate_radius/1000)
 # plt.plot(L,
 #          sample.G1_ELEVATION - min_elev, label='Gate El' , marker='x')
